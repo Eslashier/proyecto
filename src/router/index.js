@@ -29,7 +29,18 @@ const routes = [
     path: '/login',
     name: 'Login',
     component: () => import(/* webpackChunkName: "login" */ '../views/Login.vue')
+  },
+  {
+    path: '/Recuperarcontrasena',
+    name: 'Recuperar Contraseña',
+    component: () => import(/* webpackChunkName: "login" */ '../views/Recovery.vue')
+  },
+  {
+    path: '/Register',
+    name: 'Registro',
+    component: () => import(/* webpackChunkName: "login" */ '../views/Register.vue')
   }
+
 ]
 
 const router = new VueRouter({

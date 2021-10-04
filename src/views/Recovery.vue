@@ -1,7 +1,7 @@
 <template>
     <div>
 		<header2> 
-			<router-link class="btn btn-primary" to="/" role="button" color="#ffffff">
+			<router-link class="btn btn-primary" to="/login" role="button" color="#ffffff">
             <i class="fa fa-home fa2"></i></router-link> 
 		</header2>
 
@@ -18,36 +18,29 @@
         <br>    
 
            <div class="container-grid">
-                <div class="row">
-                    <div class="col-lg-6 info-contact" href="./Home.html">
-                      <p> <img src="../assets/1632184721717.jpg" width="300" height="300" alt=""></p>
-                    </div> 
+              <div class="row">
+                <div class="col-lg-6 info-contact" href="./Home.html">
+                  <p> <img src="../assets/1632184721717.jpg" width="300" height="300" alt=""></p>
+                </div> 
 					
-                    <div class="formulario">
-					<div class="col-lg-10">
-
-						<form name=login action="./Main.html">
-
-                        <div class="form-control">  
+                <div class="formulario">
+                <div class="col-lg-10">
+                <br>
+                <br>
+                <br>
+                <form name=recuperarcontrasena to="/login">
+                  <div class="form-control">  
 								
-							<label for="email"><b float="left" text-align="left">Correo electronico</b></label>
-                            <input placeholder="Correo electronico" type="email" id="email" name="email" required>
+                    <label for="email"><b float="left" text-align="left">Ingrese su correo electronico</b></label>
+                    <input placeholder="Correo electronico" type="email" id="email" name="email" required>
+       
+                    <button type="submit">Recuperar contraseña</button>
+                  </div>
 							
-                            <label for="passsword"><b>Contraseña</b></label>
-							<input type="password" placeholder="Contraseña" name="password" required >
-								
-							<span class="recovery"><router-link to="/Recuperarcontrasena" class="rgt" f>¿Olvidó su contraseña?</router-link></span>
-                
-							<input type="checkbox" checked="checked" name="remember"> 
-							<label><b class="rememberme">Recordar contraseña</b></label>
+                </form>
 						
-							<button type="submit">Iniciar sesión</button>
-                            </div>
-							<span class="rgt">¿No tiene una cuenta? <router-link to="/Register"> Registrese</router-link></span>
-						</form>
-						
-                    </div> 
-                </div>
+              </div> 
+            </div>
 			</div>
 
 		</div>
@@ -65,8 +58,8 @@
         <br>
         <br>    
 
+        <div class="copyright">&copy;2021-G5-82</div>	
 
-        <div class="copyright">&copy;2021-G5-82</div>			
     </div>
 </template>
 

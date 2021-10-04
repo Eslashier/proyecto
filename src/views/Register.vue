@@ -1,56 +1,54 @@
 <template>
     <div>
 		<header2> 
-			<router-link class="btn btn-primary" to="/" role="button" color="#ffffff">
-            <i class="fa fa-home fa2"></i></router-link> 
+      <router-link class="btn btn-primary" to="/" role="button" color="#ffffff">
+      <i class="fa fa-home fa2"></i></router-link> 
 		</header2>
 
-        <br>    
-        <br>    
-        <br>    
-        <br>    
-        <br>    
-        <br>    
-        <br>    
-        <br>
-        <br>    
-        <br>    
-        <br>    
+    <br>    
+    <br>    
+    <br>    
 
-           <div class="container-grid">
-                <div class="row">
-                    <div class="col-lg-6 info-contact" href="./Home.html">
-                      <p> <img src="../assets/1632184721717.jpg" width="300" height="300" alt=""></p>
-                    </div> 
+      <div class="container-grid">
+        <div class="row">
+          <div class="col-lg-3 info-contact">
+          </div> 
 					
-                    <div class="formulario">
-					<div class="col-lg-10">
-
-						<form name=login action="./Main.html">
-
-                        <div class="form-control">  
+          <div class="formulario">
+            <div class="col-lg-10">
+              <form name=login action="./Main.html">
+                <div class="form-control">  
 								
-							<label for="email"><b float="left" text-align="left">Correo electronico</b></label>
-                            <input placeholder="Correo electronico" type="email" id="email" name="email" required>
+                  <label for="Nombre"><b>Nombre</b></label>
+                  <input type="text" placeholder="Nombre" name="Nombre" required>
+
+                  <label for="Apellido"><b>Apellido</b></label>
+                  <input type="text" placeholder="Apellido" name="Apellido" required>
+								
+                  <label for="email"><b>Correo electronico</b></label>
+                  <input type="text" placeholder="Correo electronico" name="email" required>	
+								
+                  <label for="telefono"><b>Teléfono</b></label>
+                  <input type="text" placeholder="Teléfono" name="telefono" required>
 							
-                            <label for="passsword"><b>Contraseña</b></label>
-							<input type="password" placeholder="Contraseña" name="password" required >
-								
-							<span class="recovery"><router-link to="/Recuperarcontrasena" class="rgt" f>¿Olvidó su contraseña?</router-link></span>
-                
-							<input type="checkbox" checked="checked" name="remember"> 
-							<label><b class="rememberme">Recordar contraseña</b></label>
+                  <label for="Contraseña"><b>Contraseña</b></label>
+                  <input type="password" placeholder="Contraseña" name="password" required>
+															
+                  <label for="Contraseña2"><b>Repetir contraseña</b></label>
+                  <input type="password" placeholder="Repetir contraseña" name="password2" required>
+																		
+                  <label>
+                  <input type="checkbox" checked="checked" name="remember" required> Aceptar terminos y condiciones
+                  </label>
 						
-							<button type="submit">Iniciar sesión</button>
-                            </div>
-							<span class="rgt">¿No tiene una cuenta? <router-link to="/Register"> Registrese</router-link></span>
-						</form>
-						
-                    </div> 
+                  <button type="submit">Iniciar sesión</button>
                 </div>
-			</div>
-
-		</div>
+              </form>
+                
+            </div> 
+          </div>
+        </div>
+      </div>
 
         <br>    
         <br>    
@@ -165,7 +163,7 @@ span.rgt {
     /* For desktop: */
     .col-lg-1 {width: 8.33%;}
     .col-lg-2 {width: 16.66%;}
-    .col-lg-3 {width: 25%;}
+    .col-lg-3 {width: 36.66%;}
     .col-lg-4 {width: 33.33%;}
     .col-lg-5 {width: 41.66%;}
     .col-lg-6 {width: 50%;}
